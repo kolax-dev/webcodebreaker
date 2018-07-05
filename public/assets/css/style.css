@@ -1,0 +1,25 @@
+body{
+  background: #cccccc;
+}
+.startpage{
+  text-align: center;
+}
+.formstart{
+  margin-top: 150px;
+  padding-bottom: 35px;
+  border: 1px solid #3c763d;
+}
+.formgame{
+  margin-top: 50px;
+  padding-bottom: 35px;
+}
+.attempt{
+  background: #eee;
+}
+.hint{
+  display: none;
+}
+.new-start{
+  padding: 8px;
+  border-radius: 5px;
+}

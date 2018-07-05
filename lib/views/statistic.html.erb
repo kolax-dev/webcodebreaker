@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WEB Codebreaker</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link href="/assets/image/favicon.ico" rel="icon" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container startpage">
+      <div class="col-xs-6 col-xs-offset-3 formgame">
+        <h1>Codebreaker App</h1>
+          <a class="btn-primary new-start" href='/'>Home</a>
+          <div>
+            <% if @list_statistic %>
+              <h3>Statistics  </h3>
+              <table class="table table-bordered">
+                <tr><td>Name</td><td>Attempts</td><td>Status</td><td>Date</td></tr>
+                <% @list_statistic.each do |item|  %>
+                  <tr>
+                    <td class="text-center attempt">
+                      <span><%=item[0]%></span>
+                    </td>
+                    <td class="text-center attempt">
+                      <span><%=item[1]%></span>
+                    </td>
+                    <td class="text-center attempt">
+                      <span><%=item[2]%></span>
+                    </td>
+                    <td class="text-center attempt">
+                      <span><%=item[3]%></span>
+                    </td>
+                  </tr>
+                <% end %>
+              </table>
+            <% end %>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
