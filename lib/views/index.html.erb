@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WEB Codebreaker</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link href="/assets/image/favicon.ico" rel="icon" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container startpage">
+      <div class="col-xs-4 col-xs-offset-4 formstart">
+        <h1>Codebreaker App</h1>
+        <form action="/start_game" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+              <input type="text" name="name" value="" placeholder="Your name"  class="form-control">
+          </div>
+          <% if @error  %><div><%= @error %></div><% end %>
+          <input type="submit" value="Start" class="btn btn-primary">
+          <a class="btn-success new-start" href='/statistic'>View Statitic</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
